@@ -1,6 +1,6 @@
 from posts.dao.posts_dao import PostsDAO
 
-posts_dao = PostsDAO('./data/data.json')
+posts_dao = PostsDAO('../data/data.json')
 
 
 class TestMain:

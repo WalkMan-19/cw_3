@@ -14,4 +14,4 @@ def test_api_posts():
 def test_api_single_post():
     response = app.test_client().get('/api/posts/1')
     assert response.status_code == 200, "Неверный статус-код"
-    assert len(response.json) == 1, "Возвращается не один пост"
+    assert len(response[0].json) == 1, "Возвращается не один пост"
